@@ -1,0 +1,15 @@
+{
+  "name": "years-in-percentage",
+  "version": "1.0.0",
+  "description": "Display percentage of years",
+  "main": "percentage_year.js",
+  "scripts": {
+    "start": "node percentage_year.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "UnitedOver",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
