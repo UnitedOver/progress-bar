@@ -10,6 +10,6 @@ EXPOSE 4567
 
 # Healthcheck: ping /health every 30s
 HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
-  CMD wget --no-verbose --tries=1 --spider http://localhost:4567/health || exit 1
+  CMD sh -c "wget -q -O - http://127.0.0.1:${PORT:-4567}/health > /dev/null || exit 1"
 
 CMD ["npm", "start"]
